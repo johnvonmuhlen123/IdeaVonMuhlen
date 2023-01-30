@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js"></script>
+    <title>Plazo Fijo</title>
+  </head>
+  <body>
+    <h1>Calcular Plazo Fijo</h1>
+    <form id="formulario">
+      <h2 id="mensajeError"></h2>
+      <div>
+        <h4>Monto que desea depositar</h4>
+        <input type="number" placeholder="Monto mínimo 1000" />
+      </div>
+      <div>
+        <h4>Por cuanto tiempo? (TNA 75%)</h4>
+        <input type="number" placeholder="30 dias mínimo" />
+      </div>
+      <input
+        id="botonSubmit"
+        type="submit"
+        value="Calcular"
+        style="margin: 20px"
+      />
+    </form>
+    <div id="resultadosCalculo">
+      <h2 id="resultado"></h2>
+    </div>
+    <div>
+      Ultimos plazos calculados:
+      <ul id="listaCalculos"></ul>
+      <div>
+        <button id="botonRefrescar">Refrescar Lista</button>
+        <button id="borrarLista">Borrar Historial</button>
+      </div>
+    </div>
+  </body>
+</html>
